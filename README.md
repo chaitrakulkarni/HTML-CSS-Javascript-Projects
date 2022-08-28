@@ -1,2 +1,1 @@
-# HTML-CSS-Javascript-Projects
-sampleweb pages
+# Teacher's day greeting card
