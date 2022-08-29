@@ -24,66 +24,45 @@
 </head>
 <body id="b1">
 
+  
    <marquee behavior="" direction=""><h1>There is no knowledge without a teacher- Swamy Vivekananda</h1></marquee>
     
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
+
+   <p class="display-3" id="p1"></p>
+   
    <h3 id="h3tag"><center>Kindly open these boxes</center></h3>
    
-    <table>
+    
 
         
-        <tr>
-            
-           
-            <td id=1 onclick="gift1()">
-                <img src="https://st.depositphotos.com/1098692/1485/i/600/depositphotos_14850833-stock-photo-red-gift-box.jpg" alt="gift1" style="width: 150px; height: 200px;">
-            </td>
-      
-       
-        
-            <td id=2 onclick="gift2()">
-                <img src="https://st.depositphotos.com/1098692/1485/i/600/depositphotos_14850833-stock-photo-red-gift-box.jpg" alt="gift1" style="width: 150px; height: 200px;">
-            </td>
-        
+   <div class="row">
+    <div class="col-md-4 col-sm-6" id="1" onclick="gift1()" >
+        <img src="https://st.depositphotos.com/1098692/1485/i/600/depositphotos_14850833-stock-photo-red-gift-box.jpg" alt="gift1" style="width: 150px; height: 200px;">
+    </div>
+    <div class="col-md-4 col-sm-6" onclick="gift2()" id="2">
+        <img src="https://st.depositphotos.com/1098692/1485/i/600/depositphotos_14850833-stock-photo-red-gift-box.jpg" alt="gift1" style="width: 150px; height: 200px;">
+    </div>
+   
+    <div class="col-md-4 col-sm-6" onclick="gift3()" id="3">
+        <img src="https://st.depositphotos.com/1098692/1485/i/600/depositphotos_14850833-stock-photo-red-gift-box.jpg" alt="gift1" style="width: 150px; height: 200px;">
+    </div>
 
+    <div class="col-md-4 col-sm-6" onclick="gift4()" id="4">
+        <img src="https://st.depositphotos.com/1098692/1485/i/600/depositphotos_14850833-stock-photo-red-gift-box.jpg" alt="gift1" style="width: 150px; height: 200px;">
+    </div>
 
-      
-        
-            <td id=3 onclick="gift3()">
-                <img src="https://st.depositphotos.com/1098692/1485/i/600/depositphotos_14850833-stock-photo-red-gift-box.jpg" alt="gift1" style="width: 150px; height: 200px;">
-            </td>
-        
-            
-       
-        
-            <td id=4 onclick="gift4()">
-                <img src="https://st.depositphotos.com/1098692/1485/i/600/depositphotos_14850833-stock-photo-red-gift-box.jpg" alt="gift1" style="width: 150px; height: 200px;">
-            </td>
-      
+    <div class="col-md-4 col-sm-6" onclick="gift5()" id="5">
+        <img src="https://st.depositphotos.com/1098692/1485/i/600/depositphotos_14850833-stock-photo-red-gift-box.jpg" alt="gift1" style="width: 150px; height: 200px;">
+    </div>
 
-        
-        
-            <td id=5 onclick="gift5()">
-                <img src="https://st.depositphotos.com/1098692/1485/i/600/depositphotos_14850833-stock-photo-red-gift-box.jpg" alt="gift1" style="width: 150px; height: 200px;">
-            </td>
-       
+    <div class="col-md-4 col-sm-6" onclick="gift6()" id="6">
+        <img src="https://st.depositphotos.com/1098692/1485/i/600/depositphotos_14850833-stock-photo-red-gift-box.jpg" alt="gift1" style="width: 150px; height: 200px;">
+    </div>
 
-           
-        
-            <td id=6 onclick="gift6()">
-                <img src="https://st.depositphotos.com/1098692/1485/i/600/depositphotos_14850833-stock-photo-red-gift-box.jpg" alt="gift1" style="width: 150px; height: 200px;">
-            </td>
-       
-        
-            <td id=7 onclick="gift7()">
-                <img src="https://st.depositphotos.com/1098692/1485/i/600/depositphotos_14850833-stock-photo-red-gift-box.jpg" alt="gift1" style="width: 150px; height: 200px;">
-            </td>
-
-            
-        </tr>
-    </table>
+    <div class="col-md-4 col-sm-6" onclick="gift7()" id="7">
+        <img src="https://st.depositphotos.com/1098692/1485/i/600/depositphotos_14850833-stock-photo-red-gift-box.jpg" alt="gift1" style="width: 150px; height: 200px;">
+    </div>
+</div>
 
     
 
@@ -134,7 +113,10 @@
                   document.getElementById("b3").innerHTML="HAPPY TEACHERS DAY"
               }
 
-              
+              function name(){
+                var n = document.getElementById('name');
+                document.getElementById('p1').innerText= "Respected `${n}`";
+              }
     </script>
 </body>
 </html>
